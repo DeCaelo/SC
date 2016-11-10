@@ -13,6 +13,10 @@ export class MarketComponent implements OnInit {
     { description: 'A box with all sold Zunes', type: 'Garbage' }
   ];
 
+  onAddToCollection() {
+    alert('Hello');
+  }
+
   constructor() { }
 
   ngOnInit() {
