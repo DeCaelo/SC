@@ -1,8 +1,9 @@
 <div class="row col-xs-12">
   <ul class="list-group">
-    <li class="list-group-item">
-      <span class="badge">Photo</span>
-      <button class="btn btn-success">Add to collection</button>
+    <li class="list-group-item" *ngFor="let item of collectables">
+      <span class="badge">{{ item.type }}</span>
+      <button class="btn btn-success">Add to collection</button>&nbsp;
+      {{ item.description}}
     </li>
   </ul>
 </div>
