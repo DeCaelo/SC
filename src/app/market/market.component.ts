@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CollectableService } from "../shared/collectable.service";
+import { Collectable } from "../shared/collectable.model";
 
 @Component({
   selector: 'app-market',
@@ -8,10 +9,10 @@ import { CollectableService } from "../shared/collectable.service";
   styles: [],
 })
 export class MarketComponent implements OnInit {
-  collectables = [];
+  collectables: Collectable[] = [];
 
-  onAddToCollection() {
-    alert('Hello');
+  onAddToCollection(item: Collectable) {
+    this.collectableService.addTocollection(item);
   }
 
   constructor(private collectableService: CollectableService) { }
