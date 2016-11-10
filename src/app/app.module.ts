@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MarketComponent } from './market/market.component';
+import { CollectionComponent } from './collection/collection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MarketComponent
+    MarketComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
